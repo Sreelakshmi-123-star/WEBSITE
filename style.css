@@ -1,114 +1,52 @@
 ```css
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    background: linear-gradient(135deg, #141e30, #243b55);
-    color: white;
-}
-
-.container {
+    background-color: #f0f4f8;
     text-align: center;
-    z-index: 1;
-    padding: 20px;
+    margin: 0;
+    padding: 30px;
 }
 
 h1 {
-    font-size: 50px;
-    margin-bottom: 20px;
-    animation: slideDown 1.5s ease;
+    color: #2c3e50;
+}
+
+h2 {
+    color: #3498db;
 }
 
 p {
-    font-size: 20px;
-    margin-bottom: 30px;
-    animation: fadeIn 2.5s ease;
+    color: #555;
+    font-size: 18px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 15px 30px;
-    background: #00c6ff;
-    color: #141e30;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 30px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    animation: fadeIn 3s ease;
-}
-
-.btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 25px #00c6ff;
-}
-
-.circle {
-    position: absolute;
-    bottom: -100px;
-    width: 60px;
-    height: 60px;
-    background: rgba(0, 198, 255, 0.25);
+img {
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    animation: floatUp 10s infinite linear;
 }
 
-.circle:nth-child(2) {
-    left: 15%;
-    animation-duration: 8s;
-    width: 40px;
-    height: 40px;
+ul {
+    display: inline-block;
+    text-align: left;
+    line-height: 2;
 }
 
-.circle:nth-child(3) {
-    left: 75%;
-    animation-duration: 12s;
-    width: 80px;
-    height: 80px;
+a {
+    color: #2980b9;
+    text-decoration: none;
 }
 
-.circle:nth-child(4) {
-    left: 45%;
-    animation-duration: 9s;
-    width: 30px;
-    height: 30px;
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-@keyframes slideDown {
-    from {
-        opacity: 0;
-        transform: translateY(-60px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes floatUp {
-    from {
-        transform: translateY(0);
-    }
-    to {
-        transform: translateY(-120vh);
-    }
+button:hover {
+    background-color: #21618c;
 }
 ```
-
